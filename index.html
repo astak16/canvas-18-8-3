@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_663139_nbdaue5y67gmn29.js"></script>
+    <title>画板</title>
+</head>
+<body>
+<!--<ul>-->
+    <!--<li>iPhone</li>-->
+    <!--<li>iPad</li>-->
+    <!--<li>Macbook</li>-->
+    <!--<li>iPod</li>-->
+<!--</ul>-->
+<main>
+    <canvas id="canvas" width="700" height="500" background='yellow'></canvas>
+    <div class="wrapper">
+        <svg id="pen" class="icon pen active" aria-hidden="true">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg id="eraser" class="icon eraser" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear" class="icon clear" aria-hidden="true">
+            <use xlink:href="#icon-custom-clear"></use>
+        </svg>
+        <svg id="download" class="icon download" aria-hidden="true">
+            <use xlink:href="#icon-download1"></use>
+        </svg>
+    </div>
+    <div class="clearDrawWrapper">
+        <div class="flex">
+            <div class="clearDraw">
+                您将清空画板上所有内容！点击确认继续清空<br>
+            </div>
+            <div class="confirm">
+                <span id="correct">确认</span><span id="error">取消</span>
+            </div>
+        </div>
+    </div>
+    <input type="color" id="input" autocomplete>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

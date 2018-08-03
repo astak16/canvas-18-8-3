@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin:10px;
+}
+#canvas{
+    display: block;
+    background:white;
+}
+main{
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:30px;
+    padding:5px 10px;
+}
+.active{
+    transform: scale(1.2);
+    color:red;
+}
+.clearDrawWrapper{
+    display: none;
+    height:100vh;
+    position:absolute;
+    background: rgba(0,0,0,0.2);
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+.flex{
+    height:150px;
+    width:310px;
+    position:absolute;
+    left:calc(50% - 150px);
+    top:calc(50% - 150px);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    background: white;
+    border-radius:3px;
+
+}
+.clearDraw{
+    padding:20px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.confirm{
+    text-align: right;
+}
+span{
+    display: inline-block;
+    padding-right:30px;
+
+}
+
+input{
+    padding:0;
+    margin:0;
+    border:none;
+    background:white;
+    outline:none;
+    position: absolute;
+    top:10%;
+    left:5%;
+}
